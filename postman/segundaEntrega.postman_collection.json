@@ -1,1577 +1,3176 @@
 {
 	"info": {
-		"_postman_id": "4bbf8b9d-18ee-4637-bd14-90ee22953cb5",
+		"_postman_id": "be518ce8-be4c-4b4d-b532-2694eeae7e1f",
 		"name": "segundaEntrega",
 		"description": "Pruebas de GET, POST, PUT, DELETE de los 9 recursos de la aplicación propuesta.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Nutritional Information",
-			"event": [
+			"name": "Nutritional",
+			"item": [
 				{
-					"listen": "test",
-					"script": {
-						"id": "50ab02e7-9ce1-4653-ba95-fc4dfb6ef01b",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:3000/nutritionalInformation",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Nutritional Information",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "50ab02e7-9ce1-4653-ba95-fc4dfb6ef01b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"nutritionalInformation"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Particular Nutritional Information",
-			"event": [
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/nutritionalInformation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"nutritionalInformation"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "3855712b-f5b0-45d7-b712-3c0b8ff66c52",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:3000/nutritionalInformation/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Particular Nutritional Information",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3855712b-f5b0-45d7-b712-3c0b8ff66c52",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"nutritionalInformation",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Particular Nutritional Information 2",
-			"event": [
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/nutritionalInformation/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"nutritionalInformation",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "2aa11f4e-4fa9-45f6-ab4b-3059e65eea58",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:3000/nutritionalInformation/2",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Particular Nutritional Information 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2aa11f4e-4fa9-45f6-ab4b-3059e65eea58",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"nutritionalInformation",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Particular Nutritional Information Error",
-			"event": [
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/nutritionalInformation/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"nutritionalInformation",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "62db3c82-2c2e-4f0f-8eb4-a6a72246c805",
-						"exec": [
-							"pm.test(\"Status code is 404\", function () {",
-							"    pm.response.to.have.status(404);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:3000/nutritionalInformation/8",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Particular Nutritional Information Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "62db3c82-2c2e-4f0f-8eb4-a6a72246c805",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"nutritionalInformation",
-						"8"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Nutritional Information",
-			"event": [
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/nutritionalInformation/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"nutritionalInformation",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "f99b5357-e41b-429e-90b0-d97a58b029bc",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {",
-							"    pm.response.to.have.status(201);",
-							"});",
-							"pm.test(\"Successful POST request\", function () {",
-							"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 6,\n    \"dish\": \"Sub del día\",\n    \"Carbs\": \"50g\",\n    \"Protein\": \"25g\",\n    \"Fat\": \"6g\"\n\t\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/nutritionalInformation/create",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Nutritional Information",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f99b5357-e41b-429e-90b0-d97a58b029bc",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"nutritionalInformation",
-						"create"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Nutritional Information 2",
-			"event": [
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 6,\n    \"dish\": \"Sub del día\",\n    \"Carbs\": \"50g\",\n    \"Protein\": \"25g\",\n    \"Fat\": \"6g\"\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/nutritionalInformation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"nutritionalInformation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "25a91a09-1b6b-41b9-a51b-d2383c3c38ab",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {",
-							"    pm.response.to.have.status(201);",
-							"});",
-							"pm.test(\"Successful POST request\", function () {",
-							"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 7,\n    \"dish\": \"Italianíssimo\",\n    \"Carbs\": \"25g\",\n    \"Protein\": \"30g\",\n    \"Fat\": \"10g\"\n\t\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/nutritionalInformation/create",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Nutritional Information 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "25a91a09-1b6b-41b9-a51b-d2383c3c38ab",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"nutritionalInformation",
-						"create"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Nutrional Information Error",
-			"event": [
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 7,\n    \"dish\": \"Italianíssimo\",\n    \"Carbs\": \"25g\",\n    \"Protein\": \"30g\",\n    \"Fat\": \"10g\"\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/nutritionalInformation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"nutritionalInformation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "aaeb1a0c-b4e5-465b-9f2a-4c5fe959b750",
-						"exec": [
-							"pm.test(\"Status code is 403\", function () {",
-							"    pm.response.to.have.status(403);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 1,\n    \"dish\": \"Combo Estudiantil\",\n    \"Carbs\": \"50g\",\n    \"Protein\": \"25g\",\n    \"Fat\": \"2g\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/nutritionalInformation/create",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Nutrional Information Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "aaeb1a0c-b4e5-465b-9f2a-4c5fe959b750",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"nutritionalInformation",
-						"create"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Nutritional Information",
-			"event": [
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"dish\": \"Combo Estudiantil\",\n    \"Carbs\": \"50g\",\n    \"Protein\": \"25g\",\n    \"Fat\": \"2g\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/nutritionalInformation/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"nutritionalInformation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "c05be977-157f-4ed7-923b-aad87a881dce",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {",
-							"    pm.response.to.have.status(201);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 1,\n    \"dish\": \"Combo Estudiantil\",\n    \"Carbs\": \"100g\",\n    \"Protein\": \"250g\",\n    \"Fat\": \"30g\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/nutritionalInformation/update/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Nutritional Information",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c05be977-157f-4ed7-923b-aad87a881dce",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"nutritionalInformation",
-						"update",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Nutritional Information 2",
-			"event": [
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"dish\": \"Combo Estudiantil\",\n    \"Carbs\": \"100g\",\n    \"Protein\": \"250g\",\n    \"Fat\": \"30g\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/nutritionalInformation/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"nutritionalInformation",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "520f1951-caa4-48b1-938f-0150aa5482a4",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {",
-							"    pm.response.to.have.status(201);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 1,\n    \"dish\": \"Combo Estudiantil\",\n    \"Carbs\": \"50g\",\n    \"Protein\": \"25g\",\n    \"Fat\": \"2g\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/nutritionalInformation/update/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Nutritional Information 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "520f1951-caa4-48b1-938f-0150aa5482a4",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"nutritionalInformation",
-						"update",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Nutritional Information",
-			"event": [
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"dish\": \"Combo Estudiantil\",\n    \"Carbs\": \"50g\",\n    \"Protein\": \"25g\",\n    \"Fat\": \"2g\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/nutritionalInformation/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"nutritionalInformation",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "2830acd8-9091-4307-8a74-35bc3390d21b",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 6,\n    \"dish\": \"Sub del día\",\n    \"Carbs\": \"50g\",\n    \"Protein\": \"25g\",\n    \"Fat\": \"6g\"\n\t\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/nutritionalInformation/delete/6",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Nutritional Information",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2830acd8-9091-4307-8a74-35bc3390d21b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"nutritionalInformation",
-						"delete",
-						"6"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Nutritional Information 2",
-			"event": [
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 6,\n    \"dish\": \"Sub del día\",\n    \"Carbs\": \"50g\",\n    \"Protein\": \"25g\",\n    \"Fat\": \"6g\"\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/nutritionalInformation/delete/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"nutritionalInformation",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "d842542e-6dc3-4777-892f-6d17da0c0df9",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 7,\n    \"dish\": \"Italianíssimo\",\n    \"Carbs\": \"25g\",\n    \"Protein\": \"30g\",\n    \"Fat\": \"10g\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/nutritionalInformation/delete/7",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Nutritional Information 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d842542e-6dc3-4777-892f-6d17da0c0df9",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"nutritionalInformation",
-						"delete",
-						"7"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Nutritional Information Error",
-			"event": [
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 7,\n    \"dish\": \"Italianíssimo\",\n    \"Carbs\": \"25g\",\n    \"Protein\": \"30g\",\n    \"Fat\": \"10g\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/nutritionalInformation/delete/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"nutritionalInformation",
+								"delete",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "8769eede-7f88-42ff-af58-3536c200a4ea",
-						"exec": [
-							"pm.test(\"Status code is 404\", function () {",
-							"    pm.response.to.have.status(404);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 8,\n    \"dish\": \"Combo Estudiantil\",\n    \"Carbs\": \"100g\",\n    \"Protein\": \"250g\",\n    \"Fat\": \"30g\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/nutritionalInformation/delete/8",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Nutritional Information Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8769eede-7f88-42ff-af58-3536c200a4ea",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"nutritionalInformation",
-						"delete",
-						"8"
-					]
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 8,\n    \"dish\": \"Combo Estudiantil\",\n    \"Carbs\": \"100g\",\n    \"Protein\": \"250g\",\n    \"Fat\": \"30g\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/nutritionalInformation/delete/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"nutritionalInformation",
+								"delete",
+								"8"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
 			"name": "Promotions",
-			"event": [
+			"item": [
 				{
-					"listen": "test",
-					"script": {
-						"id": "31c92c4a-8020-498b-9c59-a32e79fd315d",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:3000/promotions",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Promotions",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "31c92c4a-8020-498b-9c59-a32e79fd315d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"promotions"
-					]
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/promotions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"promotions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Particular Promotion",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0be4cd77-5c82-4596-a36f-5e2cadeb3b19",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/promotions/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"promotions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Particular Promotion 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6c7b36e4-c302-4486-bf39-e75134982757",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/promotions/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"promotions",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Particular Promotion Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "29730627-5bec-4d3f-8ee6-1b0c79a313d5",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/promotions/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"promotions",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "456427d0-10bd-4503-a27d-9020646f0b48",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 6,\n    \"dish\": \"Sub del día\",\n    \"restaurant\": \"Subway\",\n    \"price\": 5400\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/promotions/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"promotions",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0113881d-e3e9-480b-9854-25cc78ddd06c",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 7,\n    \"dish\": \"Pasta Carbonara\",\n    \"restaurant\": \"Casa Vecchia\",\n    \"price\": 9000\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/promotions/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"promotions",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3c668453-3064-4d9b-abd4-d39a67b1c6bc",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"dish\": \"Corral Callejera\",\n\t\"restaurant\": \"El Corral\",\n    \"price\": 15900\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/promotions/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"promotions",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "de6b00c9-512f-4f9c-82a7-3463f94dc8f9",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"dish\": \"Corral Callejera\",\n    \"restaurant\": \"El Corral\",\n    \"price\": 13200\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/promotions/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"promotions",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d1b26d4b-2d61-4628-ac22-26fb2bcc56f0",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"dish\": \"Corral Callejera\",\n    \"restaurant\": \"El Corral\",\n    \"price\": 15900\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/promotions/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"promotions",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "77f7d124-4eb6-4be1-b0fb-7eb49ed6e9d4",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 6,\n    \"dish\": \"Sub del día\",\n    \"restaurant\": \"Subway\",\n    \"price\": 5400\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/promotions/delete/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"promotions",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1aecf3d8-2b39-4b34-acfe-6ce52739bdfd",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 7,\n    \"dish\": \"Pasta Carbonara\",\n    \"restaurant\": \"Casa Vecchia\",\n    \"price\": 9000\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/promotions/delete/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"promotions",
+								"delete",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Promotion Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e7226244-75b9-4a3b-9714-de8c7930dbe7",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 8,\n    \"dish\": \"Corral Callejera\",\n    \"restaurant\": \"El Corral\",\n    \"price\": 15900\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/promotions/delete/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"promotions",
+								"delete",
+								"8"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Particular Promotion",
-			"event": [
+			"name": "FavoriteDishes",
+			"item": [
 				{
-					"listen": "test",
-					"script": {
-						"id": "0be4cd77-5c82-4596-a36f-5e2cadeb3b19",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:3000/promotions/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Favorite Dishes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7d3a7476-b2fd-4b87-97f0-b2a5acce61a7",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"promotions",
-						"1"
-					]
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/favoriteDishes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favoriteDishes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Particular Favorite Dishes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "101856fb-6956-430e-b309-d31d4d0adfc4",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/favoriteDishes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favoriteDishes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Particular Favorite Dishes 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1ac997eb-3fd8-4d5b-852a-b148adc797ad",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/favoriteDishes/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favoriteDishes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Favorite Dishes Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "24806fbe-81d8-47fe-844b-04375b1d016b",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/favoriteDishes/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favoriteDishes",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Favorite Dishes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f1159b1b-e6e5-43e0-8239-8bae5ec4ba1a",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 6,\n    \"userId\": 753,\n    \"dishes\": \"Italianíssimo\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/favoriteDishes/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favoriteDishes",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Favorite Dishes 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ef4c73bd-a9b9-40d3-88ab-e2eab31391dd",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 7,\n    \"userId\": 706,\n    \"dishes\": \"Alitas de Pollo\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/favoriteDishes/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favoriteDishes",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Favorite Dishes Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "aa282aca-ccc9-4dac-8ef9-8da960bf92b7",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"userId\": 153,\n    \"dishes\": \"Corral Callejera\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/favoriteDishes/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favoriteDishes",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Favorite Dishes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c88db5cf-6c58-449b-a3c0-4cc63beada13",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"userId\": 153,\n    \"dishes\": \"Arroz con pollo\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/favoriteDishes/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favoriteDishes",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Favorite Dishes 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8f56ff1e-9167-4ed2-a964-6f6052e9018f",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"userId\": 153,\n    \"dishes\": \"Corral Callejera\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/favoriteDishes/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favoriteDishes",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Favorite Dishes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ce6ce721-6825-4675-90cd-0e8f9181a0c3",
+								"exec": [
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 6,\n    \"userId\": 753,\n    \"dishes\": \"Italianíssimo\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/favoriteDishes/delete/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favoriteDishes",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Favorite Dishes 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c3c81a92-930a-4063-92b1-eae8f2d7110a",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 7,\n    \"userId\": 706,\n    \"dishes\": \"Alitas de Pollo\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/favoriteDishes/delete/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favoriteDishes",
+								"delete",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Favorite Dishes Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1708eb90-37da-45a9-aee0-a7af72dd14b6",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 8,\n    \"userId\": 153,\n    \"dishes\": \"Corral Callejera\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/favoriteDishes/delete/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favoriteDishes",
+								"delete",
+								"8"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Particular Promotion 2",
-			"event": [
+			"name": "Restaurants",
+			"item": [
 				{
-					"listen": "test",
-					"script": {
-						"id": "6c7b36e4-c302-4486-bf39-e75134982757",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:3000/promotions/2",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Restaurants",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "50ab02e7-9ce1-4653-ba95-fc4dfb6ef01b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"promotions",
-						"2"
-					]
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/restaurants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Particular Resturant",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3855712b-f5b0-45d7-b712-3c0b8ff66c52",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/restaurants/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Particular Restaurant 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2aa11f4e-4fa9-45f6-ab4b-3059e65eea58",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/restaurants/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Particular Restaurant Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "62db3c82-2c2e-4f0f-8eb4-a6a72246c805",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/restaurants/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f99b5357-e41b-429e-90b0-d97a58b029bc",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":6,\n\t\"name\":\"media torta\",\n\t\"address\": \"cra1\",\n\t\"description\": \"normal\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/restaurants/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "25a91a09-1b6b-41b9-a51b-d2383c3c38ab",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":7,\n\t\"name\":\"media torta\",\n\t\"address\": \"cra1\",\n\t\"description\": \"normal\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/restaurants/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "aaeb1a0c-b4e5-465b-9f2a-4c5fe959b750",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":1,\n\t\"name\":\"media torta\",\n\t\"address\": \"cra1\",\n\t\"description\": \"normal\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/restaurants/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c05be977-157f-4ed7-923b-aad87a881dce",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\t\"id\":1,\n\t\t\"name\":\"media torta\",\n\t\t\"address\": \"cra2\",\n\t\t\"description\": \"normal\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/restaurants/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "520f1951-caa4-48b1-938f-0150aa5482a4",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\t\"id\":1,\n\t\t\"name\":\"media torta\",\n\t\t\"address\": \"cra1\",\n\t\t\"description\": \"normal\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/restaurants/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2830acd8-9091-4307-8a74-35bc3390d21b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/restaurants/delete/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d842542e-6dc3-4777-892f-6d17da0c0df9",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/restaurants/delete/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"delete",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8769eede-7f88-42ff-af58-3536c200a4ea",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/restaurants/delete/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"restaurants",
+								"delete",
+								"8"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Particular Promotion Error",
-			"event": [
+			"name": "Dishes",
+			"item": [
 				{
-					"listen": "test",
-					"script": {
-						"id": "29730627-5bec-4d3f-8ee6-1b0c79a313d5",
-						"exec": [
-							"pm.test(\"Status code is 404\", function () {",
-							"    pm.response.to.have.status(404);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:3000/promotions/8",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Dish",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "50ab02e7-9ce1-4653-ba95-fc4dfb6ef01b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"promotions",
-						"8"
-					]
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Particular Dish",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3855712b-f5b0-45d7-b712-3c0b8ff66c52",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Particular Dish 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2aa11f4e-4fa9-45f6-ab4b-3059e65eea58",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Particular Dish Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "62db3c82-2c2e-4f0f-8eb4-a6a72246c805",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dish",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f99b5357-e41b-429e-90b0-d97a58b029bc",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":6,\"name\":\"pasta\",\"description\":\"bueno\",\"price\":4000}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dish 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "25a91a09-1b6b-41b9-a51b-d2383c3c38ab",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":7,\"name\":\"pasta\",\"description\":\"bueno\",\"price\":4000}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dish Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "aaeb1a0c-b4e5-465b-9f2a-4c5fe959b750",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":1,\"name\":\"pasta\",\"description\":\"bueno\",\"price\":4000}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dish",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c05be977-157f-4ed7-923b-aad87a881dce",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":1,\"name\":\"pasta\",\"description\":\"bueno\",\"price\":1000000}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dish 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "520f1951-caa4-48b1-938f-0150aa5482a4",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":1,\"name\":\"pasta\",\"description\":\"bueno\",\"price\":4000}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dish",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2830acd8-9091-4307-8a74-35bc3390d21b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/delete/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dish 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d842542e-6dc3-4777-892f-6d17da0c0df9",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/delete/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"delete",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dish Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8769eede-7f88-42ff-af58-3536c200a4ea",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/delete/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"delete",
+								"8"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Promotion",
-			"event": [
+			"name": "Reviews",
+			"item": [
 				{
-					"listen": "test",
-					"script": {
-						"id": "456427d0-10bd-4503-a27d-9020646f0b48",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {",
-							"    pm.response.to.have.status(201);",
-							"});",
-							"pm.test(\"Successful POST request\", function () {",
-							"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 6,\n    \"dish\": \"Sub del día\",\n    \"restaurant\": \"Subway\",\n    \"price\": 5400\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/promotions/create",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Review",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "50ab02e7-9ce1-4653-ba95-fc4dfb6ef01b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"promotions",
-						"create"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Promotion 2",
-			"event": [
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "0113881d-e3e9-480b-9854-25cc78ddd06c",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {",
-							"    pm.response.to.have.status(201);",
-							"});",
-							"pm.test(\"Successful POST request\", function () {",
-							"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 7,\n    \"dish\": \"Pasta Carbonara\",\n    \"restaurant\": \"Casa Vecchia\",\n    \"price\": 9000\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/promotions/create",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Particular Review",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3855712b-f5b0-45d7-b712-3c0b8ff66c52",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"promotions",
-						"create"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Promotion Error",
-			"event": [
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "3c668453-3064-4d9b-abd4-d39a67b1c6bc",
-						"exec": [
-							"pm.test(\"Status code is 403\", function () {",
-							"    pm.response.to.have.status(403);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 1,\n    \"dish\": \"Corral Callejera\",\n\t\"restaurant\": \"El Corral\",\n    \"price\": 15900\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/promotions/create",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Particular Review 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2aa11f4e-4fa9-45f6-ab4b-3059e65eea58",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"promotions",
-						"create"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Promotion",
-			"event": [
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "de6b00c9-512f-4f9c-82a7-3463f94dc8f9",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {",
-							"    pm.response.to.have.status(201);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 1,\n    \"dish\": \"Corral Callejera\",\n    \"restaurant\": \"El Corral\",\n    \"price\": 13200\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/promotions/update/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Particular Review Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "62db3c82-2c2e-4f0f-8eb4-a6a72246c805",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"promotions",
-						"update",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Promotion 2",
-			"event": [
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "d1b26d4b-2d61-4628-ac22-26fb2bcc56f0",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {",
-							"    pm.response.to.have.status(201);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 1,\n    \"dish\": \"Corral Callejera\",\n    \"restaurant\": \"El Corral\",\n    \"price\": 15900\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/promotions/update/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Review",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f99b5357-e41b-429e-90b0-d97a58b029bc",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"promotions",
-						"update",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Promotion",
-			"event": [
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":6,\"user\":\"Juan\", \"rate\":5, \"restaurant\":\"el toro\",\"data\":\"bueno\"}\n"
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "77f7d124-4eb6-4be1-b0fb-7eb49ed6e9d4",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 6,\n    \"dish\": \"Sub del día\",\n    \"restaurant\": \"Subway\",\n    \"price\": 5400\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/promotions/delete/6",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Review 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "25a91a09-1b6b-41b9-a51b-d2383c3c38ab",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"promotions",
-						"delete",
-						"6"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Promotion 2",
-			"event": [
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":7,\"user\":\"Juan\", \"rate\":5, \"restaurant\":\"el toro\",\"data\":\"bueno\"}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "1aecf3d8-2b39-4b34-acfe-6ce52739bdfd",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 7,\n    \"dish\": \"Pasta Carbonara\",\n    \"restaurant\": \"Casa Vecchia\",\n    \"price\": 9000\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/promotions/delete/7",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Review Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "aaeb1a0c-b4e5-465b-9f2a-4c5fe959b750",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"promotions",
-						"delete",
-						"7"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Promotion Error",
-			"event": [
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":1,\"user\":\"Juan\", \"rate\":5, \"restaurant\":\"el toro\",\"data\":\"bueno\"}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "e7226244-75b9-4a3b-9714-de8c7930dbe7",
-						"exec": [
-							"pm.test(\"Status code is 404\", function () {",
-							"    pm.response.to.have.status(404);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 8,\n    \"dish\": \"Corral Callejera\",\n    \"restaurant\": \"El Corral\",\n    \"price\": 15900\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/promotions/delete/8",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Review",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c05be977-157f-4ed7-923b-aad87a881dce",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"promotions",
-						"delete",
-						"8"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Favorite Dishes",
-			"event": [
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":1,\"user\":\"Pedro\", \"rate\":5, \"restaurant\":\"el toro\",\"data\":\"bueno\"}\n"
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "7d3a7476-b2fd-4b87-97f0-b2a5acce61a7",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:3000/favoriteDishes",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Review 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "520f1951-caa4-48b1-938f-0150aa5482a4",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"favoriteDishes"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Particular Favorite Dishes",
-			"event": [
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":1,\"user\":\"Juan\", \"rate\":5, \"restaurant\":\"el toro\",\"data\":\"bueno\"}\n"
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "101856fb-6956-430e-b309-d31d4d0adfc4",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:3000/favoriteDishes/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Review",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2830acd8-9091-4307-8a74-35bc3390d21b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"favoriteDishes",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Particular Favorite Dishes 2",
-			"event": [
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews/delete/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "1ac997eb-3fd8-4d5b-852a-b148adc797ad",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:3000/favoriteDishes/2",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Review 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d842542e-6dc3-4777-892f-6d17da0c0df9",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"favoriteDishes",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Favorite Dishes Error",
-			"event": [
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews/delete/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"delete",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"listen": "test",
-					"script": {
-						"id": "24806fbe-81d8-47fe-844b-04375b1d016b",
-						"exec": [
-							"pm.test(\"Status code is 404\", function () {",
-							"    pm.response.to.have.status(404);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:3000/favoriteDishes/8",
-					"protocol": "http",
-					"host": [
-						"localhost"
+					"name": "Review Error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8769eede-7f88-42ff-af58-3536c200a4ea",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
 					],
-					"port": "3000",
-					"path": [
-						"favoriteDishes",
-						"8"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Favorite Dishes",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "f1159b1b-e6e5-43e0-8239-8bae5ec4ba1a",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {",
-							"    pm.response.to.have.status(201);",
-							"});",
-							"pm.test(\"Successful POST request\", function () {",
-							"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
-							"});"
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
 						],
-						"type": "text/javascript"
-					}
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/reviews/delete/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"reviews",
+								"delete",
+								"8"
+							]
+						}
+					},
+					"response": []
 				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 6,\n    \"userId\": 753,\n    \"dishes\": \"Italianíssimo\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/favoriteDishes/create",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"favoriteDishes",
-						"create"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Favorite Dishes 2",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "ef4c73bd-a9b9-40d3-88ab-e2eab31391dd",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {",
-							"    pm.response.to.have.status(201);",
-							"});",
-							"pm.test(\"Successful POST request\", function () {",
-							"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 7,\n    \"userId\": 706,\n    \"dishes\": \"Alitas de Pollo\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/favoriteDishes/create",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"favoriteDishes",
-						"create"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Favorite Dishes Error",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "aa282aca-ccc9-4dac-8ef9-8da960bf92b7",
-						"exec": [
-							"pm.test(\"Status code is 403\", function () {",
-							"    pm.response.to.have.status(403);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 1,\n    \"userId\": 153,\n    \"dishes\": \"Corral Callejera\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/favoriteDishes/create",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"favoriteDishes",
-						"create"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Favorite Dishes",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "c88db5cf-6c58-449b-a3c0-4cc63beada13",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {",
-							"    pm.response.to.have.status(201);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 1,\n    \"userId\": 153,\n    \"dishes\": \"Arroz con pollo\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/favoriteDishes/update/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"favoriteDishes",
-						"update",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Favorite Dishes 2",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "8f56ff1e-9167-4ed2-a964-6f6052e9018f",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {",
-							"    pm.response.to.have.status(201);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 1,\n    \"userId\": 153,\n    \"dishes\": \"Corral Callejera\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/favoriteDishes/update/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"favoriteDishes",
-						"update",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Favorite Dishes",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "ce6ce721-6825-4675-90cd-0e8f9181a0c3",
-						"exec": [
-							"pm.test(\"Response time is less than 200ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 6,\n    \"userId\": 753,\n    \"dishes\": \"Italianíssimo\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/favoriteDishes/delete/6",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"favoriteDishes",
-						"delete",
-						"6"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Favorite Dishes 2",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "c3c81a92-930a-4063-92b1-eae8f2d7110a",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 7,\n    \"userId\": 706,\n    \"dishes\": \"Alitas de Pollo\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/favoriteDishes/delete/7",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"favoriteDishes",
-						"delete",
-						"7"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Favorite Dishes Error",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "1708eb90-37da-45a9-aee0-a7af72dd14b6",
-						"exec": [
-							"pm.test(\"Status code is 404\", function () {",
-							"    pm.response.to.have.status(404);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": 8,\n    \"userId\": 153,\n    \"dishes\": \"Corral Callejera\"\n}"
-				},
-				"url": {
-					"raw": "http://localhost:3000/favoriteDishes/delete/8",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"favoriteDishes",
-						"delete",
-						"8"
-					]
-				}
-			},
-			"response": []
+			]
 		}
 	]
 }
