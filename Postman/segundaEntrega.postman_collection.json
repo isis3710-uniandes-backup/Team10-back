@@ -777,6 +777,51 @@
 			"response": []
 		},
 		{
+			"name": "Promotion Error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3c668453-3064-4d9b-abd4-d39a67b1c6bc",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"dish\": \"Corral Callejera\",\n\t\"restaurant\": \"El Corral\",\n    \"price\": 15900\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/promotions/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"promotions",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Promotion",
 			"event": [
 				{
@@ -961,6 +1006,52 @@
 			"response": []
 		},
 		{
+			"name": "Promotion Error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e7226244-75b9-4a3b-9714-de8c7930dbe7",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 8,\n    \"dish\": \"Corral Callejera\",\n    \"restaurant\": \"El Corral\",\n    \"price\": 15900\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/promotions/delete/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"promotions",
+						"delete",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Favorite Dishes",
 			"event": [
 				{
@@ -1074,6 +1165,44 @@
 			"response": []
 		},
 		{
+			"name": "Favorite Dishes Error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "24806fbe-81d8-47fe-844b-04375b1d016b",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/favoriteDishes/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"favoriteDishes",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Favorite Dishes",
 			"event": [
 				{
@@ -1153,6 +1282,51 @@
 				"body": {
 					"mode": "raw",
 					"raw": "{\n    \"id\": 7,\n    \"userId\": 706,\n    \"dishes\": \"Alitas de Pollo\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/favoriteDishes/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"favoriteDishes",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Favorite Dishes Error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "aa282aca-ccc9-4dac-8ef9-8da960bf92b7",
+						"exec": [
+							"pm.test(\"Status code is 403\", function () {",
+							"    pm.response.to.have.status(403);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"userId\": 153,\n    \"dishes\": \"Corral Callejera\"\n}"
 				},
 				"url": {
 					"raw": "http://localhost:3000/favoriteDishes/create",
@@ -1348,6 +1522,52 @@
 						"favoriteDishes",
 						"delete",
 						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Favorite Dishes Error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1708eb90-37da-45a9-aee0-a7af72dd14b6",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 8,\n    \"userId\": 153,\n    \"dishes\": \"Corral Callejera\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/favoriteDishes/delete/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"favoriteDishes",
+						"delete",
+						"8"
 					]
 				}
 			},
