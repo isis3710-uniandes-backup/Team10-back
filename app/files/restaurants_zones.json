@@ -1,7 +1,1 @@
-[
-    {"id":1,"name":"media torta","zone":"norte"},
-    {"id":2,"name":"media tortita","zone":"sur"},
-    {"id":3,"name":"cuarta torta","zone":"occidente"},
-    {"id":4,"name":"full torta","zone":"norte"},
-    {"id":5,"name":"media torta2","zone":"norte"}
-]
+[{"id":1,"name":"media torta","zone":"norte"},{"id":2,"name":"media tortita","zone":"sur"},{"id":3,"name":"cuarta torta","zone":"occidente"},{"id":4,"name":"full torta","zone":"norte"},{"id":5,"name":"media torta2","zone":"norte"}]
