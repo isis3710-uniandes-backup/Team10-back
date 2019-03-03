@@ -1,20 +1,7 @@
-exports.getAll = (req, res, next) => {
-	console.log("getAll");
-	res.send('Macros1');
-};
-exports.get = (req, res, next) => {
-	console.log("getOne");
-	res.send('Macros2');
-};
-exports.post = (req, res, next) => {
-	console.log("create");
-	res.send('Macros3');
-};
-exports.put = (req, res, next) => {
-	console.log("upadte");
-	res.send('Macros4');
-};
-exports.delete = (req, res, next) => {
-	console.log("delete");
-	res.send('Macros5');
-};
+var contorller = require('./generalController');
+var file  = './files/nutritionalInformation.json';
+exports.getAll = contorller.getAll(file);
+exports.get = contorller.get(file);
+exports.post = contorller.post(file);
+exports.put = contorller.put(file);
+exports.delete = contorller.delete(file);
