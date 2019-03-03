@@ -12,6 +12,9 @@ var reviewsRouter = require('./routes/reviews');
 var clientsRouter = require('./routes/clients');
 var restaurantsHistoryRouter = require('./routes/restaurants_history');
 var restaurantsZonesRouter = require('./routes/restaurants_zones');
+var favoriteDishesRouter = require('./routes/favoriteDishes');
+var nutritionalInformationRouter = require('./routes/nutritionalInformation');
+var promotionsRouter = require('./routes/promotions');
 
 var app = express();
 
@@ -33,6 +36,9 @@ app.use('/reviews', reviewsRouter);
 app.use('/restaurants_history', restaurantsHistoryRouter);
 app.use('/restaurants_zones', restaurantsZonesRouter);
 app.use('/clients', clientsRouter);
+app.use('/favoriteDishes', favoriteDishesRouter);
+app.use('/nutritionalInformation', nutritionalInformationRouter);
+app.use('/promotions', promotionsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
