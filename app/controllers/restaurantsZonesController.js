@@ -1,20 +1,7 @@
-exports.getAll = (req, res, next) => {
-	console.log("getAll");
-	res.send('hola que ase restaurants');
-};
-exports.get = (req, res, next) => {
-	console.log("getOne");
-	res.send('hola que ase restaurants');
-};
-exports.post = (req, res, next) => {
-	console.log("create");
-	res.send('hola que ase restaurants');
-};
-exports.put = (req, res, next) => {
-	console.log("upadte");
-	res.send('hola que ase restaurants');
-};
-exports.delete = (req, res, next) => {
-	console.log("delete");
-	res.send('hola que ase restaurants');
-};
+var contorller = require('./generalController');
+var file  = './files/restaurants_zones.json';
+exports.getAll = contorller.getAll(file);
+exports.get = contorller.get(file);
+exports.post = contorller.post(file);
+exports.put = contorller.put(file);
+exports.delete = contorller.delete(file);
