@@ -9,6 +9,9 @@ var usersRouter = require('./routes/users');
 var restaurantsRouter = require('./routes/restaurants');
 var dishesRouter = require('./routes/dishes');
 var reviewsRouter = require('./routes/reviews');
+var clientsRouter = require('./routes/clients');
+var restaurantsHistoryRouter = require('./routes/restaurants_history');
+var restaurantsZoneRouter = require('./routes/restaurants_zones');
 
 var app = express();
 
@@ -27,6 +30,9 @@ app.use('/users', usersRouter);
 app.use('/restaurants', restaurantsRouter);
 app.use('/dishes', dishesRouter);
 app.use('/reviews', reviewsRouter);
+app.use('/restaurants_history', restaurantsHistoryRouter);
+app.use('/restaurants_history', restaurantsHistoryRouter);
+app.use('/clients', clientsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
