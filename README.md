@@ -41,7 +41,7 @@ La aplicación se desplegará en http://localhost:3000/
 
 ## Pruebas
 
-Para realizar las pruebas puede utilizar la colección de Postman ubicada en Team10-back/postman e importar dicha colección que se encuentra allí en Postman.
+Para realizar las pruebas puede utilizar la colección de Postman ubicada en Team10-back/postman e importar dicha colección que se encuentra allí en Postman y recuerde tener desplegado el proyecto para ejecutar las pruebas.
 
 ## Rutas de los recursos
 
