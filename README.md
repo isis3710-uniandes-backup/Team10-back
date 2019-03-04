@@ -43,6 +43,6 @@ Para realizar las pruebas puede utilizar la colección de postman ubicada en Tea
 
 ## Integrantes
 
-Alejandro Dorado - 200714182
-Andrés León - 201532885
-Juan Sosa - 201425255
+* Alejandro Dorado - 200714182
+* Andrés León - 201532885
+* Juan Sosa - 201425255
