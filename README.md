@@ -40,3 +40,9 @@ Inicie el proyecto.
 ## Pruebas
 
 Para realizar las pruebas puede utilizar la colección de postman ubicada en Team10-back/postman.
+
+## Integrantes
+
+Alejandro Dorado - 200714182
+Andrés León - 201532885
+Juan Sosa - 201425255
