@@ -1,5 +1,5 @@
 var contorller = require('./generalController');
-var file  = './files/restaurants.json';
+var file  = './data/restaurants.json';
 exports.getAll = contorller.getAll(file);
 exports.get = contorller.get(file);
 exports.post = contorller.post(file);
