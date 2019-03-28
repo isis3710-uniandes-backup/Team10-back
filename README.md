@@ -45,15 +45,15 @@ Para realizar las pruebas puede utilizar la colección de Postman ubicada en Tea
 
 ## Rutas de los recursos
 
-* Restaurantes: http://localhost:3000/restaurants
-* Platos: http://localhost:3000/dishes
-* Clientes/Usuarios: http://localhost:3000/restaurants_history 
-* Promociones: http://localhost:3000/promotions
-* Reviews: http://localhost:3000/reviews
-* Platos favoritos: http://localhost:3000/favoriteDishes
-* Zonas donde hay restaurantes: http://localhost:3000/restaurants_zones  
-* Información nutricional más detallada (Macros): http://localhost:3000/nutritionalInformation
-* Historial de busqueda de restaurantes: http://localhost:3000/restaurants_history
+* Restaurantes: http://localhost:3001/restaurants
+* Platos: http://localhost:3001/dishes
+* Clientes/Usuarios: http://localhost:3001/restaurants_history 
+* Promociones: http://localhost:3001/promotions
+* Reviews: http://localhost:3001/reviews
+* Platos favoritos: http://localhost:3001/favoriteDishes
+* Zonas donde hay restaurantes: http://localhost:3001/restaurants_zones  
+* Información nutricional más detallada (Macros): http://localhost:3001/nutritionalInformation
+* Historial de busqueda de restaurantes: http://localhost:3001/restaurants_history
 
 ## Autores
 
