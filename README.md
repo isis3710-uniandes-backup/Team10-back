@@ -37,7 +37,7 @@ Inicie el proyecto:
     
     npm start
     
-La aplicación se desplegará en http://localhost:3000/
+La aplicación se desplegará en http://localhost:3001/
 
 ## Pruebas
 
